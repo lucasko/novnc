@@ -7,7 +7,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 yum localinstall -y google-chrome-stable_current_x86_64.rpm
 yum clean all
 
-ln -s /usr/bin/chrome-browser /usr/bin/google-chrome
+#ln -s /usr/bin/chrome-browser /usr/bin/google-chrome
 
 ### fix to start chromium in a Docker container, see https://github.com/ConSol/docker-headless-vnc-container/issues/2
 echo "CHROME_FLAGS='--no-sandbox --start-maximized --user-data-dir'" > $HOME/.chrome-browser.init
