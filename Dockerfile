@@ -31,7 +31,6 @@ RUN $INST_SCRIPTS/tools.sh
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 ### Install xvnc-server & noVNC - HTML5 based VNC viewer
-Add tigervnc-1.8.0-22.el7.x86_64.rpm /tmp/
 RUN $INST_SCRIPTS/tigervnc.sh
 RUN $INST_SCRIPTS/no_vnc.sh
 
