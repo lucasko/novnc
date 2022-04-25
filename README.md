@@ -10,7 +10,6 @@ Each Docker image is installed with the following components:
 * VNC-Server (default VNC port `5901`)
 * [**noVNC**](https://github.com/novnc/noVNC) - HTML5 VNC client (default http port `6901`)
 * Browsers:
-  * Mozilla Firefox
   * Chromium
   
 ![Docker VNC Desktop access via HTML page](.pics/vnc_container_view.png)

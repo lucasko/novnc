@@ -30,7 +30,6 @@
 * add "Known Issues" documentation: [Chromium crashes with high VNC_RESOLUTION](https://github.com/ConSol/docker-headless-vnc-container#51-chromium-crashes-with-high-vnc_resolution-53)
 
 ### Version 1.2.2
-* disable automatic firefox updates ([#45](https://github.com/ConSol/docker-headless-vnc-container/issue/45))
 * fix wrong env usage of `$HOME` ([#47](https://github.com/ConSol/docker-headless-vnc-container/issue/47))
 * fix hanging vnc handshake if container is offline ([#50](https://github.com/ConSol/docker-headless-vnc-container/issue/50))
 * Merge pull request from:
@@ -41,8 +40,6 @@
 * Fix broken `docker stop/start` ([#40](https://github.com/ConSol/docker-headless-vnc-container/issues/40))
 
 ### Version 1.2.0
-* Use fixed firefox version `45.9.0esr` ([#39](https://github.com/ConSol/docker-headless-vnc-container/issues/39), [#20](https://github.com/ConSol/docker-headless-vnc-container/issues/20), [#16](https://github.com/ConSol/docker-headless-vnc-container/issues/16)) 
-  * fix memory consumption problems in comparison to current firefox 55
   * tested on long term container issues without crashes 
 * Add en_US.UTF-8 as default locale ([#27](https://github.com/ConSol/docker-headless-vnc-container/issues/27)) 
 * Add enviroment variable `VNC_VIEW_ONLY=true` for view only VNC connections ([#25](https://github.com/ConSol/docker-headless-vnc-container/issues/25))
@@ -63,5 +60,4 @@
 * Fix chromium/chrome startup ([#2](https://github.com/ConSol/docker-headless-vnc-container/issues/2)): Set chromium as default "chrome" and support `~/.chromium-browser.init`
 * Switch from vnc4server to tigervnc ([#4](https://github.com/ConSol/docker-headless-vnc-container/issues/4))
 * Remove not needed Screensaver pacakges ([#11](https://github.com/ConSol/docker-headless-vnc-container/issues/11))        
-* Use Firefox 45 as fixed browser as long current firefox crashes ([#16](https://github.com/ConSol/docker-headless-vnc-container/issues/16))
 * Fix issue be starting of reattached containers on `docker start` ([#15](https://github.com/ConSol/docker-headless-vnc-container/issues/15))
