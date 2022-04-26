@@ -46,7 +46,7 @@ RUN $INST_SCRIPTS/libnss_wrapper.sh
 ADD ./src/common/scripts $STARTUPDIR
 RUN $INST_SCRIPTS/set_user_permission.sh $STARTUPDIR $HOME && \
 	chown 1000:1000 -R $HOME	&& \
-	echo "${USER}:root1234" | chpasswd
+	echo "root:root1234" | chpasswd
 
 USER 1000
 
