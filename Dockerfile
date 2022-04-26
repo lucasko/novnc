@@ -13,8 +13,8 @@ EXPOSE $VNC_PORT $NO_VNC_PORT
 ENV HOME=/user01 \
     TERM=xterm \
     STARTUPDIR=/dockerstartup \
-    INST_SCRIPTS=/user01/install \
-    NO_VNC_HOME=/user01/noVNC \
+    INST_SCRIPTS=/opt/install \
+    NO_VNC_HOME=/opt/noVNC \
     VNC_COL_DEPTH=24 \
     VNC_RESOLUTION=1280x1024 \
     VNC_PW=vncpassword \
@@ -45,7 +45,8 @@ ADD ./src/common/xfce/ $HOME/
 RUN $INST_SCRIPTS/libnss_wrapper.sh
 ADD ./src/common/scripts $STARTUPDIR
 RUN $INST_SCRIPTS/set_user_permission.sh $STARTUPDIR $HOME && \
-	chown 1000:1000 -R $HOME
+	chown 1000:1000 -R $HOME	&& \
+	echo "${USER}:root1234" | chpasswd
 
 USER 1000
 
