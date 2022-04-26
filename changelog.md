@@ -27,7 +27,7 @@
 * add save mode for tag_image.sh script 
 * disable trigger latest Dockerhub build -> use tag_image.sh script 
 * use correct python-numpy packages 
-* add "Known Issues" documentation: [Chromium crashes with high VNC_RESOLUTION](https://github.com/ConSol/docker-headless-vnc-container#51-chromium-crashes-with-high-vnc_resolution-53)
+* add "Known Issues" documentation: [Chrome crashes with high VNC_RESOLUTION](https://github.com/ConSol/docker-headless-vnc-container#51-chrome-crashes-with-high-vnc_resolution-53)
 
 ### Version 1.2.2
 * fix wrong env usage of `$HOME` ([#47](https://github.com/ConSol/docker-headless-vnc-container/issue/47))
@@ -46,7 +46,7 @@
   * Update to tigervnc version `1.8`
 * Use a more stable command for ip determination (PR [#31](https://github.com/ConSol/docker-headless-vnc-container/issues/31), thx to @arnaudveron) 
 * Support empty `CMD` values in startup script ([#32](https://github.com/ConSol/docker-headless-vnc-container/issues/32)) 
-* Add chromium flag `--disable-gpu` to work for current chromium ([#36](https://github.com/ConSol/docker-headless-vnc-container/issues/36)) 
+* Add chrome flag `--disable-gpu` to work for current chrome ([#36](https://github.com/ConSol/docker-headless-vnc-container/issues/36)) 
 * Add `TERM=xterm` environment var ([#37](https://github.com/ConSol/docker-headless-vnc-container/issues/37))  
 
 ### Version 1.1.0
@@ -57,7 +57,7 @@
 * Add [IceWM](http://www.icewm.org/) as alternative UI
 * Remove Java installation, not needed in this image ([#5](https://github.com/ConSol/docker-headless-vnc-container/issues/5))
 * Refactor build structure ([#5](https://github.com/ConSol/docker-headless-vnc-container/issues/5))
-* Fix chromium/chrome startup ([#2](https://github.com/ConSol/docker-headless-vnc-container/issues/2)): Set chromium as default "chrome" and support `~/.chromium-browser.init`
+* Fix chrome/chrome startup ([#2](https://github.com/ConSol/docker-headless-vnc-container/issues/2)): Set chrome as default "chrome" and support `~/.chrome-browser.init`
 * Switch from vnc4server to tigervnc ([#4](https://github.com/ConSol/docker-headless-vnc-container/issues/4))
 * Remove not needed Screensaver pacakges ([#11](https://github.com/ConSol/docker-headless-vnc-container/issues/11))        
 * Fix issue be starting of reattached containers on `docker start` ([#15](https://github.com/ConSol/docker-headless-vnc-container/issues/15))
